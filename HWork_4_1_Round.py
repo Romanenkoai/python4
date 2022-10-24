@@ -27,7 +27,7 @@ print ('\nили')
 num = math.pi
 num = num + (num % (10**-round_value)) # тут определяется правило округления
 num = num * (10**round_value) # перемещаем точку
-num = num//1 # отезаем дробную часть
+num = num//1 # отрезаем дробную часть
 num = num / 10**round_value # возвращаем точку
 print(num)
 # ------------
