@@ -54,10 +54,10 @@ file2_num_list = strig_filter (file2)
 file2_num_list.reverse()
 
 #------- собственно попытка посчитать сумму
-result = list(zip(file1_num_list,file2_num_list)) # да, я знаю, что zip делает выборку по наименьшей последовательности, это решить и не успел
+result = list(zip(file1_num_list,file2_num_list)) # да, я знаю, что zip делает выборку по наименьшей последовательности
 # lenght = ((len(file1_num_list) - len(file2_num_list))**2)**0.5+len(result)
 
-for i in range(0,len(result),2): # сумируем получившиеся после zip лщщфициенты
+for i in range(0,len(result),2): # сумируем получившиеся после zip коэфициенты
     result[i] = sum(result[i])
 
 result = [result[x] for x in range(0,len(result),2)]
